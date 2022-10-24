@@ -90,7 +90,7 @@ background-color: #c4c4c4;
 `}
 
 @media (max-width:460px) {
-  width:290px;
+  width:310px;
   height:70px;
 }
 `
