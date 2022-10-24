@@ -116,6 +116,9 @@ font-size: 18px;
 padding-top: 15px;
 @media (max-width:460px) {
   font-size: 13px;
+
+padding-top: 5px;
+
 }
 `
 
