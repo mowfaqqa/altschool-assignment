@@ -6,9 +6,9 @@ export default function Navbar() {
   return (
     <Nav>
       <Head>the LOREM COMMUNITY</Head>
-      <Links><NavLink to={'/home'} className={({ isActive }) => (isActive ? 'button' : 'link')}>Home</NavLink>
-        <NavLink to={'/services'} className={({ isActive }) => (isActive ? 'button' : 'link')}>Services</NavLink>
-        <NavLink to={'/community'} className={({ isActive }) => (isActive ? 'button' : 'link')}>Community</NavLink>
+      <Links><NavLink to='/' end className={({ isActive }) => (isActive ? 'button' : 'link')}>Home</NavLink>
+        <NavLink to='/services' className={({ isActive }) => (isActive ? 'button' : 'link')}>Services</NavLink>
+        <NavLink to='/community' className={({ isActive }) => (isActive ? 'button' : 'link')}>Community</NavLink>
       </Links>
     </Nav>
   )

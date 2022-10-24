@@ -45,6 +45,7 @@ a {
 .button {
   background-image: linear-gradient(to right, var(--light) 0%, var(--med) 100%);
   color: white;
+  font-weight: bold;
 }
 
 svg {
