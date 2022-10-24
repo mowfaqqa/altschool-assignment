@@ -19,6 +19,9 @@ font-family: gentona;
 padding: 30px;
 font-size: 50px;
 color: var(--dark);
+@media (max-width:460px) {
+  font-size: 30px;
+}
 `
 
 const Text = styled.div`
@@ -27,4 +30,7 @@ font-weight: bold;
 margin: 0 auto;
 text-align: center;
 width: 50%;
+@media (max-width:460px) {
+  font-size: 14px;
+}
 `

@@ -30,8 +30,11 @@ const Head = styled.h1`
 text-align: center;
 font-family: gentona;
 color: rebeccapurple;
-height: 63vh;
+height: 67vh;
 padding-top: 40px;
+@media (max-width:460px) {
+font-size: medium;
+}
 `
 
 export default ErrorBoundary

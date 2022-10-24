@@ -4,7 +4,7 @@ import ReactPaginate from 'react-paginate'
 import styled, { css } from "styled-components"
 
 export default function Users() {
-  const { users, isLoading } = useFetch('https://randomuser.me/api/?results=100')
+  const { users, isLoading } = useFetch('https://randomuser.me/api/?results=97')
   console.log(users);
   //Pagination variables needed
   const [pageNumber, setPageNumber] = useState(0)
@@ -62,11 +62,18 @@ const Head = styled.h1`
 text-align: center;
 font-family: gentona;
 color: var(--dark);
+@media (max-width:460px) {
+  font-size: large;
+}
 `
 const Grid = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 height: 66vh;
+@media (max-width:460px) {
+  grid-template-columns:none;
+  height: auto;
+}
 `
 
 const User = styled.div`
@@ -77,21 +84,35 @@ margin-bottom: 30px;
 box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
 display: flex;
 background-image: linear-gradient(to right, var(--light) 0%, var(--med) 100%);
+
 ${props => props.Skeleton && css`
 background-color: #c4c4c4;
 `}
+
+@media (max-width:460px) {
+  width:290px;
+  height:70px;
+}
 `
 
 const Details = styled.div`
 display: grid;
 grid-template-rows: 60px 30px auto;
 font-size: 15px;
+@media (max-width:460px) {
+  font-size: 10px;
+  grid-template-rows: 28px 15px auto;
+  gap: 3px;
+}
 `
 const Name = styled.div`
 padding-left: 30px;
 font-weight: bold;
 font-size: 18px;
 padding-top: 15px;
+@media (max-width:460px) {
+  font-size: 13px;
+}
 `
 
 const Email = styled.div`

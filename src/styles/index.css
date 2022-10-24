@@ -19,6 +19,7 @@ body {
   font-family: nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 
@@ -62,7 +63,7 @@ width: 20px;
   justify-content: center;
   width: 80%;
   margin: 10px auto;
-  /* background-color: #c4c4c4; */
+  
 }
 
 .paginatebtns li {
@@ -83,4 +84,31 @@ width: 20px;
 
 h3 a{
   color: var(--light);
+}
+
+@media (max-width:460px) {
+  a{
+    padding: 3px 9px;
+  }
+  svg {
+    position: relative;
+    width: 14px;
+    bottom: 6px;
+  }
+  img{
+    width: 70px;
+  }
+  .svg{
+    top: 5px;
+    padding-right: 10px;
+    width: 15px;
+    }
+    .paginatebtns {
+     font-size: 10px;
+     padding-left: 0px;
+     
+    }
+    .paginatebtns a{
+      padding: 1px 5px;
+    }
 }

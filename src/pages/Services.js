@@ -8,7 +8,7 @@ export default function Services() {
       <Head>WE PROVIDE THE BEST SERVICES </Head>
       <Grid>
         <Service>
-          <Icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="svg">
+          <Icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
             <path d="M10 1a6 6 0 00-3.815 10.631C7.237 12.5 8 13.443 8 14.456v.644a.75.75 0 00.572.729 6.016 6.016 0 002.856 0A.75.75 0 0012 15.1v-.644c0-1.013.762-1.957 1.815-2.825A6 6 0 0010 1zM8.863 17.414a.75.75 0 00-.226 1.483 9.066 9.066 0 002.726 0 .75.75 0 00-.226-1.483 7.553 7.553 0 01-2.274 0z" />
           </svg>
           </Icon>
@@ -59,6 +59,9 @@ const Head = styled.h1`
 text-align: center;
 font-family: gentona;
 color: white;
+@media (max-width:460px) {
+  font-size: 20px;
+}
 `
 const Grid = styled.div`
 padding: 0 30px;
@@ -66,13 +69,18 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 15px;
 color: white;
+@media (max-width:460px) {
+  padding: 0 10px;
+}
 `
 const Service = styled.div`
 display: grid;
 grid-template-columns: 50px auto;
 align-items: center;
 gap: 10px;
-
+@media (max-width:460px) {
+  grid-template-columns: 30px auto;
+}
 `
 const Icon = styled.div`
 background-color: var(--dark);
@@ -81,12 +89,21 @@ padding-top: 10px;
 margin-right: 6px;
 height: 34px;
 border-radius: 50%;
+@media (max-width:460px) {
+  height: 14px;
+}
 `
 const Details = styled.div`
 font-size: 12px;
+@media (max-width:460px) {
+  font-size: 8px;
+}
 `
 const H3 = styled.h3`
 font-family: gentona;
 font-size: 14px;
 word-spacing: 3px;
+@media (max-width:460px) {
+  font-size: 9px;
+}
 `

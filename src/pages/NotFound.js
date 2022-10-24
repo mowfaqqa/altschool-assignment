@@ -18,4 +18,7 @@ width: 50%;
 margin: 100px auto;
 text-align: center;
 color: var(--dark);
+@media (max-width:460px) {
+  font-size: small;
+}
 `
