@@ -13,7 +13,7 @@ export default function NotFound() {
 }
 
 const Oops = styled.div`
-height: 45vh;
+height: 46vh;
 width: 50%;
 margin: 100px auto;
 text-align: center;
