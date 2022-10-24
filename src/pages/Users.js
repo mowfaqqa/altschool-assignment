@@ -71,6 +71,7 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 height: 66vh;
 @media (max-width:460px) {
+
   grid-template-columns:none;
   height: auto;
 }
@@ -92,6 +93,9 @@ background-color: #c4c4c4;
 @media (max-width:460px) {
   width:310px;
   height:70px;
+
+margin:10px auto;
+
 }
 `
 
