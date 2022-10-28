@@ -1,12 +1,11 @@
 import { useState } from "react"
-import useFetch from "../hooks/useFetch"
+import useFetch from "../hooks/fetchHook"
 import ReactPaginate from 'react-paginate'
 import styled, { css } from "styled-components"
 
-export default function Users() {
+export const Users = () => {
   const { users, isLoading } = useFetch('https://randomuser.me/api/?results=97')
   console.log(users);
-  //Pagination variables needed
   const [pageNumber, setPageNumber] = useState(0)
   const usersPerPage = 9
   const pageVisited = usersPerPage * pageNumber
@@ -57,6 +56,7 @@ export default function Users() {
 
   )
 }
+export default Users
 
 const Head = styled.h1`
 text-align: center;
@@ -69,7 +69,6 @@ color: var(--dark);
 const Grid = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-height: 66vh;
 @media (max-width:460px) {
 
   grid-template-columns:none;
@@ -82,7 +81,6 @@ margin-left: 15px;
 width:430px;
 height: 128px;
 margin-bottom: 30px;
-box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
 display: flex;
 background-image: linear-gradient(to right, var(--light) 0%, var(--med) 100%);
 

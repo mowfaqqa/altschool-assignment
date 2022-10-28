@@ -2,9 +2,8 @@ import styled, { css } from "styled-components";
 
 
 const Body = styled.div`
-height: 70vh;
+height: 75vh;
 width: 100%;
-background-image: linear-gradient(to right, var(--light) 0%, var(--med) 100%);
 margin-top: 20px;
 
 ${props => props.Home && css`
@@ -20,8 +19,6 @@ ${props => props.Services && css`
 }
  
 `}
-
-
 `
 
 

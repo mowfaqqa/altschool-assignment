@@ -3,11 +3,11 @@ import styled from "styled-components"
 export default function Footer() {
 
   return (
-    <Foter>&#169; KHALIL 2022</Foter>
+    <FooterComponent>&#169; Muwafaq Aliyu 2022</FooterComponent>
   )
 }
 
-const Foter = styled.div`
+const FooterComponent = styled.div`
 background-color:var(--dark);
 width: 100%;
 height: 30px;

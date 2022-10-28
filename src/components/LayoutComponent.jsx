@@ -1,9 +1,7 @@
-import Footer from "./Footer"
-import Navbar from "./Navbar"
+import Footer from "./FooterComponent"
+import Navbar from "./Nav"
 import { Outlet } from 'react-router-dom'
-import ErrorBoundary from "./ErrorBoundary"
-import styled from "styled-components"
-
+import ErrorBoundary from "./Error_boundary"
 
 
 export default function Layout() {
@@ -11,7 +9,7 @@ export default function Layout() {
     <div>
       <Navbar />
       <ErrorBoundary>
-   <Outlet />
+        <Outlet />
       </ErrorBoundary>
       <Footer />
     </div>

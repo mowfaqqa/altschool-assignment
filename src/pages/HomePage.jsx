@@ -1,18 +1,20 @@
 import styled from "styled-components"
-import {Body} from "../styles/Styles"
+import {Body} from "../styles/Styling"
 
 
-export default function Home() {
+const Home = () => {
  
 
 
   return (
     <Body Home>
-      <Head>HOMEPAGE</Head>
-      <Text>the LOREM COMMUNITY is a Non-Profit fast growing community of Professional Software Engineers that help small starting businesses with the best ways to promote their businesses.</Text>
+      <Head>WELCOME</Head>
+      <Text>The Maze Community is a Non-Profit fast growing community of Professional Software Engineers that help small starting businesses with the best ways to promote their businesses.</Text>
     </Body>
   )
 }
+
+export default Home
 
 const Head = styled.h1`
 font-family: gentona;
@@ -34,3 +36,4 @@ width: 50%;
   font-size: 14px;
 }
 `
+

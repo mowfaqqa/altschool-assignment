@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import { Body } from "../styles/Styles"
+import { Body } from "../styles/Styling"
 
 
-export default function Services() {
+const Services = () => {
   return (
     <Body Services>
       <Head>WE PROVIDE THE BEST SERVICES </Head>
@@ -54,6 +54,8 @@ export default function Services() {
     </Body>
   )
 }
+
+export default Services
 
 const Head = styled.h1`
 text-align: center;

@@ -1,12 +1,12 @@
-import Services from "./pages/Services";
-import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import Users from "./pages/Users";
+import Services from "./pages/Service__Page";
+import Home from "./pages/HomePage";
+import NotFound from "./pages/Not_found";
+import Users from "./pages/Userspage";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from "./components/Layout"
+import Layout from "./components/LayoutComponent"
 
 
-function App() {
+const App = () => {
 
   return (
     <BrowserRouter>
